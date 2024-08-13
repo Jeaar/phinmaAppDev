@@ -1,0 +1,123 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/log_In">
+
+    <fragment
+        android:id="@+id/log_In"
+        android:name="com.example.myproject.Log_In"
+        android:label="Log In"
+        tools:layout="@layout/fragment_log__in" >
+        <action
+            android:id="@+id/action_log_In_to_schools"
+            app:destination="@id/schools" />
+    </fragment>
+    <fragment
+        android:id="@+id/schools"
+        android:name="com.example.myproject.schools"
+        android:label="Schools"
+        tools:layout="@layout/fragment_schools" >
+        <action
+            android:id="@+id/actiom_schools_to_phinma_upang"
+            app:destination="@+id/phinma_upang">
+        </action>
+        <action
+            android:id="@+id/actiom_schools_to_phinma_Araullo"
+            app:destination="@+id/phinma_Araullo">
+        </action>
+        <action
+            android:id="@+id/action_schools_to_phinma_iloilo"
+            app:destination="@id/phinma_iloilo"/>
+        <action
+            android:id="@+id/action_schools_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/phinma_upang"
+        android:name="com.example.myproject.Phinma_Upang"
+        android:label="Phinma Upang"
+        tools:layout="@layout/fragment_phinma__upang">
+        <action
+            android:id="@+id/action_phinma_upang_to_PU_Scholarship"
+            app:destination="@+id/PU_scholarship"/>
+        <action
+            android:id="@+id/action_phinma_upang_to_p_u_map"
+            app:destination="@+id/p_u_map"/>
+    </fragment>
+    <fragment
+        android:id="@+id/phinma_Araullo"
+        android:name="com.example.myproject.Phinma_Araullo"
+        android:label="Phinma Araullo"
+        tools:layout="@layout/fragment_phinma__araullo">
+        <action
+            android:id="@+id/action_phinma_Araullo_to_p_a_map"
+            app:destination="@+id/p_a_map"/>
+        <action
+            android:id="@+id/action_phinma_Araullo_to_PA_Scholarship"
+            app:destination="@+id/PA_scholarship"/>
+    </fragment>
+    <fragment
+        android:id="@+id/PU_scholarship"
+        android:name="com.example.myproject.PU_Scholarship"
+        android:label="PU_Scholarship"
+        tools:layout="@layout/fragment_p_u__scholarship">
+    </fragment>
+    <fragment
+        android:id="@+id/p_u_map"
+        android:name="com.example.myproject.PU_Map"
+        android:label="PU_Map"
+        tools:layout="@layout/fragment_p_u__map"/>
+    <fragment
+        android:id="@+id/PA_scholarship"
+        android:name="com.example.myproject.PA_Scholarship"
+        android:label="PI_Scholarship"
+        tools:layout="@layout/fragment_p_i__scholarship"/>
+    <fragment
+        android:id="@+id/p_a_map"
+        android:name="com.example.myproject.PA_Map"
+        android:label="P_I_Map"
+        tools:layout="@layout/fragment_p_a__map"/>
+    <fragment
+        android:id="@+id/phinma_iloilo"
+        android:name="com.example.myproject.Phinma_Iloilo"
+        android:label="Phinma Iloilo"
+        tools:layout="@layout/fragment_phinma__iloilo">
+        <action
+            android:id="@+id/action_phinma_iloilo_to_p_i_map"
+            app:destination="@+id/p_i_map">
+        </action>
+        <action
+            android:id="@+id/action_phinma_iloilo_to_PI_Scholarship"
+            app:destination="@+id/PI_scholarship">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/PI_scholarship"
+        android:name="com.example.myproject.PI_Scholarship"
+        android:label="PI_Scholarship"
+        tools:layout="@layout/fragment_p_i__scholarship"/>
+    <fragment
+        android:id="@+id/p_i_map"
+        android:name="com.example.myproject.PI_Map"
+        android:label="P_I_Map"
+        tools:layout="@layout/fragment_p_i__map"/>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.myproject.profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+
+        <action
+            android:id="@+id/action_profile_to_about_us"
+            app:destination="@id/about_us" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/about_us"
+        android:name="com.example.myproject.about_us"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>

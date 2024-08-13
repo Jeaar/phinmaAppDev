@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".PA_Map">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/phinma_araullo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phinma Araullo Map"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/myraid_regular"
+            android:layout_gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here is the map of Phinma Araullo University. The university is located in Cabanatuan City, known for its commitment to academic excellence and its role in shaping future leaders."
+            android:textSize="16sp"
+            android:fontFamily="@font/myraid_regular"
+            android:textColor="@color/black"
+            android:padding="20dp"
+
+            android:paddingBottom="16dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/au_map"
+            android:contentDescription="Map of Phinma Iloilo"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+</FrameLayout>

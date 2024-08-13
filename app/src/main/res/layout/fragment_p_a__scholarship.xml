@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".PA_Scholarship">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/phinma_araullo"
+            android:contentDescription="Phinma Araullo Logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phinma Araullo Scholarships"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/myraid_regular"
+            android:paddingBottom="16dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available Scholarships at Phinma Araullo"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/myraid_regular"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. PHINMA Scholarship"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/myraid_regular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. Salutatorian Scholarship"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/myraid_regular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. Dean's List Full Scholarship"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/myraid_regular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. Dean's List Half Scholarship"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/myraid_regular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. Hawak Kamay Scholarship"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/myraid_regular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. List of External Scholarships"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/myraid_regular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7. Children of Alumni Discount"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/myraid_regular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8. Kapamilya Discount"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/myraid_regular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9. STWS (Serving Those Who Serve)"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/myraid_regular"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10. Most Outstanding Student (Basic Ed)"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/myraid_regular"
+                    />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</FrameLayout>
