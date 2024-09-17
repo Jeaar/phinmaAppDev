@@ -45,6 +45,12 @@
         <action
             android:id="@+id/action_phinma_upang_to_p_u_map"
             app:destination="@+id/p_u_map"/>
+        <action
+            android:id="@+id/action_phinma_upang_to_u_Events"
+            app:destination="@id/u_Events" />
+        <action
+            android:id="@+id/action_phinma_upang_to_manual_Page"
+            app:destination="@id/manual_Page" />
     </fragment>
     <fragment
         android:id="@+id/phinma_Araullo"
@@ -57,6 +63,15 @@
         <action
             android:id="@+id/action_phinma_Araullo_to_PA_Scholarship"
             app:destination="@+id/PA_scholarship"/>
+        <action
+            android:id="@+id/action_phinma_Araullo_to_AU_Events"
+            app:destination="@id/AU_Events" />
+        <action
+            android:id="@+id/action_phinma_Araullo_to_popup_event_details"
+            app:destination="@id/popup_event_details" />
+        <action
+            android:id="@+id/action_phinma_Araullo_to_manual_Page"
+            app:destination="@id/manual_Page" />
     </fragment>
     <fragment
         android:id="@+id/PU_scholarship"
@@ -92,6 +107,12 @@
             android:id="@+id/action_phinma_iloilo_to_PI_Scholarship"
             app:destination="@+id/PI_scholarship">
         </action>
+        <action
+            android:id="@+id/action_phinma_iloilo_to_i_Events"
+            app:destination="@id/i_Events" />
+        <action
+            android:id="@+id/action_phinma_iloilo_to_manual_Page"
+            app:destination="@id/manual_Page" />
     </fragment>
 
     <fragment
@@ -120,4 +141,28 @@
         android:name="com.example.myproject.about_us"
         android:label="About Us"
         tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/AU_Events"
+        android:name="com.example.myproject.AU_Events"
+        android:label="fragment_a_u__events"
+        tools:layout="@layout/fragment_a_u__events" />
+    <fragment
+        android:id="@+id/i_Events"
+        android:name="com.example.myproject.I_Events"
+        android:label="fragment_i__events"
+        tools:layout="@layout/fragment_i__events" />
+    <fragment
+        android:id="@+id/u_Events"
+        android:name="com.example.myproject.U_Events"
+        android:label="fragment_u__events"
+        tools:layout="@layout/fragment_u__events" />
+    <fragment
+        android:id="@+id/popup_event_details"
+        android:name="com.example.myproject.popup_event_details"
+        android:label="popup_event_details" />
+    <fragment
+        android:id="@+id/manual_Page"
+        android:name="com.example.myproject.Manual_Page"
+        android:label="fragment_manual__page"
+        tools:layout="@layout/fragment_manual__page" />
 </navigation>

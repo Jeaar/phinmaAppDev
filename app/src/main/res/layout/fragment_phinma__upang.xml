@@ -351,6 +351,90 @@
                     android:textSize="15sp" />
             </GridLayout>
 
+            <GridLayout
+                android:id="@+id/upangevents"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#727253"
+                android:columnCount="2"
+                android:paddingHorizontal="10dp"
+                android:rowCount="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="#00000000"
+                    app:cardElevation="0dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/calendar" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/optima_b"
+                    android:text="events"
+                    android:textColor="#ffffff "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/myraid_regular"
+                    android:text="-English Fest - Nov. 6, 2024"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/myraid_regular"
+                    android:text="-Tourism Day - Nov. 7, 2024"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="70dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/myraid_regular"
+                    android:text="-Lamparaan - Dec. 5, 2024"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </GridLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
@@ -360,7 +444,7 @@
 
                 <Button
                     android:id="@+id/mapbtn"
-                    android:layout_width="150dp"
+                    android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:text="Map"
                     android:fontFamily="@font/optima_b"
@@ -370,12 +454,23 @@
 
                 <Button
                     android:id="@+id/scholarshipbtn"
-                    android:layout_width="150dp"
+                    android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:text="Scholarship"
-                    android:textColor="@color/white"
                     android:fontFamily="@font/optima_b"
+                    android:textColor="@color/white"
+                    android:background="@drawable/primarybtn"
+                    android:layout_marginEnd="10dp" />
+
+                <Button
+                    android:id="@+id/manualbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Manual"
+                    android:fontFamily="@font/optima_b"
+                    android:textColor="@color/white"
                     android:background="@drawable/primarybtn" />
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

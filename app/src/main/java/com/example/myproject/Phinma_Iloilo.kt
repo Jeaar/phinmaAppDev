@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.GridLayout
 import androidx.navigation.fragment.findNavController
 
 class Phinma_Iloilo : Fragment() {
@@ -14,7 +15,7 @@ class Phinma_Iloilo : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_phinma__iloilo, container, false)
     }
 
@@ -29,6 +30,15 @@ class Phinma_Iloilo : Fragment() {
         val scholarshipbtn: Button = view.findViewById(R.id.scholarshipbtn)
         scholarshipbtn.setOnClickListener{
             findNavController().navigate(R.id.action_phinma_iloilo_to_PI_Scholarship)
+        }
+        val manualbtn: Button = view.findViewById(R.id.manualbtn)
+        manualbtn.setOnClickListener{
+            findNavController().navigate(R.id.action_phinma_iloilo_to_manual_Page)
+        }
+
+        val I_Events: GridLayout = view.findViewById(R.id.Iloevents)
+        I_Events.setOnClickListener{
+            findNavController().navigate(R.id.action_phinma_iloilo_to_i_Events)
         }
     }
 }

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.GridLayout
 import androidx.navigation.fragment.findNavController
 
 class Phinma_Upang : Fragment() {
@@ -24,10 +25,17 @@ class Phinma_Upang : Fragment() {
         mapbtn.setOnClickListener {
             findNavController().navigate(R.id.action_phinma_upang_to_p_u_map)
         }
-
         val scholarshipbtn: Button = view.findViewById(R.id.scholarshipbtn)
-        scholarshipbtn.setOnClickListener{
+        scholarshipbtn.setOnClickListener {
             findNavController().navigate(R.id.action_phinma_upang_to_PU_Scholarship)
+        }
+        val manualbtn: Button = view.findViewById(R.id.manualbtn)
+        manualbtn.setOnClickListener{
+            findNavController().navigate(R.id.action_phinma_upang_to_manual_Page)
+        }
+        val uEvents: GridLayout = view.findViewById(R.id.upangevents)
+        uEvents.setOnClickListener{
+            findNavController().navigate(R.id.action_phinma_upang_to_u_Events)
         }
     }
 }

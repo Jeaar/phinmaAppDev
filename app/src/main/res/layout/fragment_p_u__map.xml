@@ -4,46 +4,107 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@color/white"
     tools:context=".PU_Map">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <ImageView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/phinma_upang"/>
-
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Phinma University of Pangasinan"
-            android:textSize="25sp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/optima"
-            android:layout_gravity="center"
-            android:paddingBottom="8dp"
-            android:paddingTop="20dp"/>
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Here is the map of Phinma Urdaneta University. The university is located in Urdaneta City, known for its quality education and diverse programs."
-            android:textSize="16sp"
-            android:fontFamily="@font/myraid_regular"
-            android:textColor="@color/black"
-            android:padding="20dp"
-            android:paddingBottom="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phinma Upang University Map"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/myraid_regular"
+                android:layout_gravity="center"
+                android:paddingBottom="16dp"
+                android:paddingTop="20dp"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginTop="50dp"
-            android:src="@drawable/pu_map"
-            android:contentDescription="Map of Phinma Upang"
-            android:scaleType="centerInside" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/phinma_upang" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phinma Upang Map"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/myraid_regular"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here is the map of Phinma Urdaneta University. The university is located in Urdaneta City, known for its quality education and diverse programs."
+                android:textSize="16sp"
+                android:fontFamily="@font/myraid_regular"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:paddingBottom="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/pu_map"
+                android:contentDescription="Map of Phinma Upang"
+                android:scaleType="centerInside" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horizon Hall"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/myraid_regular"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/au_horizon_hall_building"
+                android:contentDescription="Horizon Hall"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nursing Facilities"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/myraid_regular"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/nursing_facilities_scaled"
+                android:contentDescription="Nursing facilities"
+                android:scaleType="centerInside" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </FrameLayout>
